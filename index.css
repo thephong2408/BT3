@@ -296,6 +296,8 @@ i {
 
 .ex {
   width: 640px;
+  display: flex;
+  align-items: center;
 }
 .ex__nav--ul-nav {
   display: flex;
