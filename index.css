@@ -148,7 +148,6 @@ i {
 .gird__card {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   width: 304px;
 }
@@ -161,8 +160,7 @@ i {
 .gird__card--text {
   display: inline-block;
   width: 100%;
-  width: 262px;
-
+  width: 300px;
   gap: 0px;
   opacity: 0px;
   font-family: "SF Mono";
@@ -457,6 +455,11 @@ i {
 }
 
 @media screen and (max-width: 992px) {
+  .gird__card:nth-last-child(1),
+  .gird__card:nth-last-child(2),
+  .gird__card:nth-last-child(3) {
+    display: none;
+  }
   .ngang1 {
     width: 100%;
     height: 0px;
