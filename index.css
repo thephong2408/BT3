@@ -453,7 +453,9 @@ i {
   text-align: left;
   margin-bottom: 9px;
 }
-
+ul.avt__img {
+  margin-top: 24px;
+}
 @media screen and (max-width: 992px) {
   .gird__card:nth-last-child(1),
   .gird__card:nth-last-child(2),
@@ -698,26 +700,22 @@ i {
   }
   .avt__img {
     width: 100%;
+    margin-top: 24px;
   }
   .icon {
     width: 100%;
   }
-  .ex__nav--ul-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+
   .logo {
     margin-top: 2rem;
     width: 100%;
   }
   .ex__nav--ul-nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .ex__nav--ul-nav {
-    margin-top: 2rem;
-  }
+
   .ex {
     width: 100%;
   }
