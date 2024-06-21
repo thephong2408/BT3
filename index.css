@@ -87,10 +87,10 @@ i {
   cursor: pointer;
 }
 
-.Wrapper {
-  width: 100vw;
+.wrapper {
   display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .body {
@@ -99,7 +99,6 @@ i {
   align-items: center;
   padding-top: 52px;
 }
-
 .body__title {
   width: 858px;
   height: 162px;
@@ -108,7 +107,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: New York Extra Large;
+  font-family: "New York Extra Large", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 54px;
@@ -116,23 +115,21 @@ i {
 }
 .body__title1 {
   margin-top: 32px;
-  width: 592px;
+  width: 626px;
   height: 68px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "SF Mono";
   font-size: 20px;
   font-weight: 400;
   line-height: 34px;
+  margin-bottom: 52px;
   text-align: center;
-  margin-bottom: 32px;
+  font-family: "SF Mono", sans-serif;
 }
 .name {
   margin-top: 73px;
   margin-bottom: 27px;
   gap: 0px;
   opacity: 0px;
-  font-family: New York Extra Large;
+  font-family: "New York Extra Large", sans-serif;
   font-size: 44px;
   font-weight: 700;
   line-height: 52.51px;
@@ -142,12 +139,12 @@ i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 28px;
-  grid-row-gap: 32px;
 }
 
 .gird__card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
   align-items: center;
   width: 304px;
 }
@@ -158,12 +155,11 @@ i {
   margin-bottom: 20px;
 }
 .gird__card--text {
+  width: 262px;
   display: inline-block;
   width: 100%;
   width: 300px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "SF Mono";
+  font-family: "SF Mono", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 26.4px;
@@ -186,7 +182,7 @@ i {
   margin-top: 25.58px;
   gap: 0px;
   opacity: 0px;
-  font-family: New York Small;
+  font-family: "New York Small", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -198,7 +194,7 @@ i {
 
   gap: 0px;
   opacity: 0px;
-  font-family: "SF Mono";
+  font-family: "SF Mono", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16.8px;
@@ -239,10 +235,10 @@ i {
 }
 .header__ul {
   margin-right: 64px;
-  display: flex;
-  justify-content: space-between;
   height: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header__ul--li {
   display: flex;
@@ -266,10 +262,8 @@ i {
 .ngang1 {
   width: 640px;
   height: 0px;
-  margin-top: 34px;
-  gap: 0px;
+  margin-top: 32px;
   border: 2px 0px 0px 0px;
-  opacity: 0px;
   border: 2px solid #000000;
 }
 .img2 {
@@ -278,15 +272,15 @@ i {
 }
 .ex__span {
   margin-top: 12px;
-  display: flex;
+  margin-bottom: 52px;
   width: 481px;
   height: 44px;
-  font-family: "SF Mono";
   font-size: 13px;
   font-weight: 500;
   line-height: 22.4px;
+  font-family: "SF Pro Text", sans-serif;
+  display: flex;
   text-align: center;
-  margin-bottom: 36px;
 }
 .ngang2 {
   width: 640px;
@@ -329,17 +323,19 @@ i {
 
 .ex__nav--ul {
   width: 100%;
-
   margin-bottom: 52px;
   font-size: 20px;
-  font-family: "New York Medium";
+  font-family: "New York Medium", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 34px;
   text-align: left;
 }
+.ex__nav--ul:nth-last-child(1) {
+  margin-bottom: 100px;
+}
 .ex__nav--ul-li {
-  font-family: "New York Medium";
+  font-family: "New York Medium", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 34px;
@@ -391,21 +387,20 @@ i {
 .comment__text1 {
   width: 444px;
   height: 28px;
+  margin-bottom: 18px;
   font-size: 36px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-  margin-bottom: 18px;
 }
 .comment__text2 {
   width: 538px;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
   margin-bottom: 36px;
-  font-family: "SF Mono";
+  text-align: center;
+  font-family: "SF Pro Text", sans-serif;
 }
 .header__svg {
   margin-left: 64px;
@@ -426,7 +421,7 @@ i {
   font-size: 16px;
 }
 .input1::placeholder {
-  font-family: "SF Mono";
+  font-family: "SF Mono", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.87px;
@@ -436,7 +431,7 @@ i {
   height: 54px;
   background: #000000;
   color: #fff;
-  font-family: "SF Mono";
+  font-family: "SF Mono", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 23.87px;
@@ -445,7 +440,7 @@ i {
 }
 .share {
   width: 100%;
-  font-family: "SF Mono";
+  font-family: "SF Mono", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.71px;
@@ -456,7 +451,42 @@ i {
 ul.avt__img {
   margin-top: 24px;
 }
+.text4 {
+  width: 543px;
+  height: 78px;
+  font-family: "SF Pro Text", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.span__text4 {
+  font-weight: 700;
+}
+.input1::placeholder {
+  font-family: "SF Mono", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.87px;
+  color: #000000;
+}
 @media screen and (max-width: 992px) {
+  .input1::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.09px;
+  }
+  .gird__card {
+    margin-bottom: 42px;
+  }
+  .gird__card--img {
+    width: 335px;
+    height: 194px;
+    margin-bottom: 20px;
+  }
+
   .gird__card:nth-last-child(1),
   .gird__card:nth-last-child(2),
   .gird__card:nth-last-child(3) {
@@ -464,12 +494,7 @@ ul.avt__img {
   }
   .ngang1 {
     width: 100%;
-    height: 0px;
     margin-top: 34px;
-    gap: 0px;
-    border: 2px 0px 0px 0px;
-    opacity: 0px;
-    border: 2px solid #000000;
   }
   .header__svg {
     width: 217px;
@@ -485,13 +510,11 @@ ul.avt__img {
   }
   .header__ul {
     margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .ex__nav--ul {
     font-size: 16px;
-    font-family: "New York Medium";
+    width: 100%;
+    margin-bottom: 52px;
   }
   .header {
     width: 375px;
@@ -502,7 +525,6 @@ ul.avt__img {
     font-size: 29px;
     font-weight: 700;
     line-height: 29px;
-    text-align: center;
   }
   .comment__text2 {
     width: 306px;
@@ -510,27 +532,20 @@ ul.avt__img {
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    text-align: center;
-
-    font-family: "SF Mono";
   }
   .email {
-    width: 348px;
+    width: 306px;
     height: 54px;
   }
   .input1 {
     font-size: 16px;
     width: 200px;
   }
-  .input1::placeholder {
-    font-family: "SF Mono";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23.87px;
-  }
+
   .btn {
     width: 108px;
     height: 54px;
+    font-size: 16px;
   }
 
   .comment {
@@ -540,9 +555,7 @@ ul.avt__img {
     border-bottom: 2px solid #000000;
     border-left: none;
     border-right: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 60px;
   }
   .logo__footer {
     height: 18px;
@@ -552,7 +565,6 @@ ul.avt__img {
   }
   .ex__span {
     width: 335px;
-    height: 36px;
   }
   .img2 {
     width: 100%;
@@ -564,7 +576,7 @@ ul.avt__img {
     top: 1545px;
     left: 20px;
     gap: 0px;
-    font-family: "SF Mono";
+    font-family: "SF Mono", sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 18.2px;
@@ -581,14 +593,7 @@ ul.avt__img {
     gap: 0px;
     opacity: 0px;
   }
-  .text4 {
-    width: 640px;
-    height: auto;
-    top: 1565px;
-    left: 400px;
-    gap: 0px;
-    opacity: 0px;
-  }
+
   .responsive {
     display: none;
   }
@@ -628,11 +633,8 @@ ul.avt__img {
     justify-content: center;
   }
   .body__title {
-    width: 335px;
+    width: 338px;
     height: 172px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: New York Extra Large;
     font-size: 36px;
     font-weight: 700;
     line-height: 42.96px;
@@ -641,15 +643,13 @@ ul.avt__img {
   .body__title1 {
     width: 335px;
     height: 81px;
-    gap: 0px;
+    margin-bottom: 32px;
     word-spacing: 5px;
-    opacity: 0px;
-    font-family: "SF Mono";
+    font-family: "SF Mono", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 27.2px;
     text-align: center;
-    margin-bottom: 32px;
   }
 
   .gird {
@@ -667,7 +667,7 @@ ul.avt__img {
     left: 44px;
     gap: 0px;
     opacity: 0px;
-    font-family: New York Small;
+    font-family: "New York Small", sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 18.2px;
@@ -720,11 +720,6 @@ ul.avt__img {
     width: 100%;
   }
   .ex__nav--ul-li {
-    font-size: 16px;
-  }
-  .ex__nav--ul {
-    width: 100%;
-    margin-bottom: 52px;
     font-size: 16px;
   }
 }
