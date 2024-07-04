@@ -4,11 +4,18 @@ html {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 .container {
   width: 100%;
 }
-
+/* .logo {
+  border-radius: 2px;
+  height: 44px;
+  overflow: hidden;
+} */
 button {
   display: flex;
   justify-content: center;
@@ -18,9 +25,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  overflow-y: overlay;
-  overflow-x: hidden;
-  font-family: Helvetica, serif;
+  font-family: "SF Pro Text", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 
 html ::-webkit-scrollbar {
@@ -150,16 +158,13 @@ i {
 }
 
 .gird__card--img {
-  width: 304px;
+  width: 100%;
   height: 176px;
   margin-bottom: 20px;
 }
 .gird__card--text {
-  width: 262px;
-  display: inline-block;
-  width: 100%;
-  width: 300px;
-  font-family: "SF Mono", sans-serif;
+  width: 282px;
+  font-family: "SF Pro Display", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 26.4px;
@@ -190,7 +195,7 @@ i {
   color: #fff;
 }
 .text2 {
-  width: 178px;
+  width: 210px;
 
   gap: 0px;
   opacity: 0px;
@@ -211,7 +216,9 @@ i {
   width: 100%;
 }
 .header {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header__header {
   display: none;
@@ -244,7 +251,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 34px;
   height: 100%;
 }
 .img__logo {
@@ -275,8 +282,8 @@ i {
   margin-bottom: 52px;
   width: 481px;
   height: 44px;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 550;
   line-height: 22.4px;
   font-family: "SF Pro Text", sans-serif;
   display: flex;
@@ -312,14 +319,6 @@ i {
 .ex__nav {
   width: 100%;
 }
-.ex__nav--ul-li {
-  width: 100%;
-  margin-bottom: 32px;
-}
-.ex__nav--ul-li:nth-of-type() {
-  width: 100%;
-  margin-bottom: 32px;
-}
 
 .ex__nav--ul {
   width: 100%;
@@ -335,6 +334,8 @@ i {
   margin-bottom: 100px;
 }
 .ex__nav--ul-li {
+  width: 100%;
+  margin-bottom: 19px;
   font-family: "New York Medium", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -346,10 +347,11 @@ i {
 .icon {
   min-width: 140px;
   height: 44px;
-
+  border-radius: 2px;
   gap: 0px;
   opacity: 0px;
   border: 1px solid #eaeaea;
+  box-shadow: 1px 1px 13px 1px #eaeaea;
 }
 
 .div_icon {
@@ -361,7 +363,7 @@ i {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-top: 114px;
+  margin-top: 50px;
   margin-bottom: 111px;
   width: 640px;
   height: 313px;
@@ -385,12 +387,13 @@ i {
   align-items: center;
 }
 .comment__text1 {
-  width: 444px;
+  width: 470px;
   height: 28px;
   margin-bottom: 18px;
   font-size: 36px;
   font-weight: 700;
   line-height: 28px;
+  font-family: "New York Extra Large", sans-serif;
   text-align: center;
 }
 .comment__text2 {
@@ -421,7 +424,7 @@ i {
   font-size: 16px;
 }
 .input1::placeholder {
-  font-family: "SF Mono", sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.87px;
@@ -431,7 +434,7 @@ i {
   height: 54px;
   background: #000000;
   color: #fff;
-  font-family: "SF Mono", sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 23.87px;
@@ -440,7 +443,7 @@ i {
 }
 .share {
   width: 100%;
-  font-family: "SF Mono", sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.71px;
@@ -464,6 +467,7 @@ ul.avt__img {
 }
 .span__text4 {
   font-weight: 700;
+  font-family: "SF Pro Text", sans-serif;
 }
 .input1::placeholder {
   font-family: "SF Mono", sans-serif;
@@ -472,11 +476,18 @@ ul.avt__img {
   line-height: 23.87px;
   color: #000000;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) {
+  .ex__nav {
+    width: 335px;
+  }
   .input1::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 19.09px;
+  }
+  .span__text4 {
+    font-weight: 700;
+    font-family: "SF Pro Text", sans-serif;
   }
   .gird__card {
     margin-bottom: 42px;
@@ -565,11 +576,28 @@ ul.avt__img {
   }
   .ex__span {
     width: 335px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text4 {
+    width: 245px;
+    font-size: 14px;
+    line-height: 22.4px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    font-family: "SF Pro Text", sans-serif;
+    font-size: 14px;
   }
   .img2 {
-    width: 100%;
+    width: 375px;
     height: 250px;
   }
+  .name {
+    font-size: 32px;
+  }
+
   .image1__title {
     width: 335px;
     height: 36px;
@@ -608,7 +636,7 @@ ul.avt__img {
     box-shadow: 0px 1px 0px 0px #00000029;
   }
   .header__svg {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .img__logo {
     width: 375px;
@@ -718,6 +746,9 @@ ul.avt__img {
 
   .ex {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .ex__nav--ul-li {
     font-size: 16px;
